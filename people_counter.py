@@ -6,7 +6,7 @@ from sort import *
 
 cap = cv2.VideoCapture('people.mp4')
 
-model = YOLO("yolov10l.pt")
+model = YOLO("yolov8n.pt")
 
 classNames = ["person", "bicycle", "car", "motorbike", "aeroplane", "bus", "train", "truck", "boat",
               "traffic light", "fire hydrant", "stop sign", "parking meter", "bench", "bird", "cat",
