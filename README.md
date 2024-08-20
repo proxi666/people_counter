@@ -32,12 +32,13 @@ This project implements a people counting system using the YOLOv10 model for obj
 ## Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/people-counting.git
+   git clone https://github.com/proxi666/people-counting.git
 2. Install the required dependencies:
    ```bash
    pip install -r requirements.txt
    
 ## Usage
+
 1. Run the people_counter.py script:
  ```bash
   python people_counter.py
