@@ -1,16 +1,16 @@
 # People Counting Project
 
-This project implements a people counting system using the YOLOv10 model for object detection and the SORT algorithm for tracking. The system counts people moving across two designated lines in a video feed, distinguishing between those moving up and down.
+This project implements a people counting system using the YOLOv8 model for object detection and the SORT algorithm for tracking. The system counts people moving across two designated lines in a video feed, distinguishing between those moving up and down.
 
 ## Features
-- **Object Detection:** Utilizes YOLOv10 for detecting various classes of objects, specifically focusing on people in this project.
+- **Object Detection:** Utilizes YOLOv8 for detecting various classes of objects, specifically focusing on people in this project.
 - **Object Tracking:** Implements the SORT (Simple Online and Realtime Tracking) algorithm for tracking people across frames.
 - **Custom Masking:** Applies a mask to focus the detection on a specific region of interest in the video feed.
 - **Counting Logic:** Counts people crossing two defined lines (upward and downward) within the frame, using their center coordinates.
 
 ## How It Works
 1. **Object Detection:**
-   - The script uses a pre-trained YOLOv10 model (`yolov10l.pt`) to detect objects in each frame of the video.
+   - The script uses a pre-trained YOLOv8 model (`yolov8n.pt`) to detect objects in each frame of the video.
    - Only people (`person` class) with confidence scores above 0.3 are considered for counting.
 
 2. **Tracking:**
@@ -25,7 +25,7 @@ This project implements a people counting system using the YOLOv10 model for obj
 ## Prerequisites
 - Python 3.x
 - OpenCV
-- YOLOv10 (from `ultralytics` package)
+- YOLOv8 (from `ultralytics` package)
 - `cvzone` library for drawing bounding boxes and text.
 - `sort` library for tracking.
 
